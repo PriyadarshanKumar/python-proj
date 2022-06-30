@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record name ="Collection Report" id="view_collection_report_tree" model="cl.wastemanager.collection.report">
+            <field name="description">Collection Report Tree</field>
+            <field name="model">ir.ui.view</field>
+            <field name="arch" type="xml">
+                <tree string="Collection Analysis">
+                    <field name="hospital_no" type="string"/>
+                    <field name="partner_id" type="integer"/>
+                    <field name="district" type="string"/>
+                    <field name="town" type="string"/>
+                    <field name="date" type="string"/>
+                    <field name="cat1_uom_count" type="integer"/>
+                    <field name="cat1_uom_qty" type="float"/>
+                    <field name="cat2_uom_count" type="integer"/>
+                    <field name="cat2_uom_qty" type="float"/>
+                    <field name="cat3_uom_count" type="integer"/>
+                    <field name="cat3_uom_qty" type="float"/>
+                    <field name="cat4_uom_count" type="integer"/>
+                    <field name="cat4_uom_qty" type="float"/>
+                    <field name="cat5_uom_count" type="integer"/>
+                    <field name="cat5_uom_qty" type="float"/>
+                    <field name="total_uom_count" type="integer"/>
+                    <field name="total_uom_qty" type="float"/>
+                    <field name="plant_id" type="integer"/>
+                    <field name="vehicle_id" type="integer"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</openerp>
